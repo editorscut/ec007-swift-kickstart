@@ -1,6 +1,6 @@
 let newline = "\n"
 
-var people:String[] = ["LLVM Master", "Obj-C Old-timer", "Swift Programmer"]
+var people = ["LLVM Master", "Obj-C Old-timer", "Swift Programmer"]
 
 func createGreeting(withGreeting greeting:String) -> (String) -> String {
     func flexibleGreeting(name:String = "World") -> String {
@@ -13,7 +13,7 @@ let hello = createGreeting(withGreeting: "Hello")
 let bonjour = createGreeting(withGreeting: "Bonjour")
 let hey = createGreeting(withGreeting: "Hey")
 
-func greet(theFollowingPeople folks:String[], withMessage message:(String) -> String) -> (countOfPeople:Int,completeGreeting:String) {
+func greet(theFollowingPeople folks:[String], withMessage message:(String) -> String) -> (countOfPeople:Int,completeGreeting:String) {
     var temporaryGreeting = ""
     for folk in folks {
         temporaryGreeting = temporaryGreeting + message(folk) + newline
