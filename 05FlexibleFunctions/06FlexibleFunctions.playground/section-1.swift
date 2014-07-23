@@ -1,3 +1,5 @@
+import Foundation
+
 var coffeeDrinks = ["Drip", "Espresso", "Americano", "Cappuccino", "Latte"]
 
 /* This version of emphasize() goes with version 1 and 2 below

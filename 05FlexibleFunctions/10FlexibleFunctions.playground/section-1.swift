@@ -1,3 +1,5 @@
+import Foundation
+
 var numbers = [5, 1, 4, 8, 2, 7]
 var coffeeDrinks = ["Drip", "Espresso", "Americano", "Cappuccino", "Latte"]
 

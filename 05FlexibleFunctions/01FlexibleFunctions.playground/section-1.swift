@@ -1,3 +1,5 @@
+import Foundation
+
 var coffeeDrinks = ["Drip", "Espresso", "Americano", "Cappuccino", "Latte"]
 
 func emphasize(theContentsOf array:[String]) -> [String] {
