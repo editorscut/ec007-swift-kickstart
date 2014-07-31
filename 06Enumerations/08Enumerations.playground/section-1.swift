@@ -1,7 +1,6 @@
 enum BasketballPosition {    case PointGuard(Int, String), ShootingGuard(Int, String)    case SmallForward(Int, String), PowerForward(Int, String)    case Center(Int, String)
     
-    var uniformNumber:Int {
-    get {
+    var uniformNumber:Int { // note I've removed the get { and } lines
         switch self {
         case .PointGuard(let uniformNumber, _):
             return uniformNumber
@@ -13,11 +12,9 @@ enum BasketballPosition {    case PointGuard(Int, String), ShootingGuard(Int, S
             return uniformNumber
         case .Center(let uniformNumber, _):
             return uniformNumber
-        }
     }
     }
     var playerName:String {
-    get {
         switch self {
     case .PointGuard(_, let playerName):
         return playerName
@@ -29,7 +26,6 @@ enum BasketballPosition {    case PointGuard(Int, String), ShootingGuard(Int, S
                 return playerName
     case .Center(_, let playerName):
                 return playerName
-        }
     }
     }}
 
