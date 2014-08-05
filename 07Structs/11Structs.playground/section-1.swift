@@ -1,7 +1,9 @@
-enum BasketballPosition:String {
-    case PointGuard = "point guard", ShootingGuard = "shooting guard"
-    case SmallForward = "small forward", PowerForward = "power forward"
-    case Center = "center"
+enum BasketballPosition:Int {
+    case PointGuard, ShootingGuard, SmallForward, PowerForward, Center
+    func name() -> String {
+        let names = ["point guard", "shooting guard", "small forward", "power forward", "center"]
+        return names[self.toRaw()]
+    }
 }
 
 struct BasketballPlayer {
@@ -10,7 +12,7 @@ struct BasketballPlayer {
     let position:BasketballPosition
     
     func colorCommentary() -> String {
-        return "Playing \(position.toRaw()), it's number \(number), \(name)."
+        return "wearing number \(number), \(position.name()),  \(name)"
     }
 }
 
