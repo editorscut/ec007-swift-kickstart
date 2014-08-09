@@ -4,3 +4,4 @@ import UIKit
 
 var str = "Hello, playground"
 str
+println(str)

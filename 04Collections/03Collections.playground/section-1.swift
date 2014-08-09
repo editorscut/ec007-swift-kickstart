@@ -1,4 +1,4 @@
- var coffeeDrinks = Array(count:5, repeatedValue:"Cappuccino")
+var coffeeDrinks = Array(count:5, repeatedValue:"Cappuccino")
 //var coffeeDrinks = [String](count:5, repeatedValue:"Cappuccino")
 
 coffeeDrinks[0] = "Drip"

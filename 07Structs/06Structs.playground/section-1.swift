@@ -1,13 +1,13 @@
 import Foundation
 
-operator prefix √ {}
+prefix operator  √ {}
 
-@prefix func √ (argument:Double) -> Double {
+prefix func √ (argument:Double) -> Double {
     return sqrt(argument)
 }
-operator infix ^-^ {precedence 160}
+infix operator  ^-^ {precedence 160}
 
-@infix func ^-^ (number:Double, power: Double) -> Double {
+func ^-^ (number:Double, power: Double) -> Double {
     return pow(number, power)
 }
 

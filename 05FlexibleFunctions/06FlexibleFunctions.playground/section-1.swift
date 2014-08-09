@@ -4,18 +4,16 @@ var coffeeDrinks = ["Drip", "Espresso", "Americano", "Cappuccino", "Latte"]
 
 /* This version of emphasize() goes with version 1 and 2 below
 func emphasize(inout theContentsOf array:[String],
-               byApplying modification:(String) -> String) -> [String] {
+               byApplying modification:(String) -> String)  {
     for i in 0 ..< array.count {
         array[i] = modification(array[i])
     }
-    return array
 } */
 func emphasize(inout array:[String],
-               modification:(String) -> String) -> [String] {
-for i in 0 ..< array.count {
-array[i] = modification(array[i])
-}
-return array
+              modification:(String) -> String) {
+        for i in 0 ..< array.count {
+            array[i] = modification(array[i])
+        }
 }
 
 

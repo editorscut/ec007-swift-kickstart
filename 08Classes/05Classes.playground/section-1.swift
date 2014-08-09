@@ -38,7 +38,7 @@ let buckeyes = CollegeBasketballTeam(name: "Buckeyes", affiliation: "Ohio State"
 buckeyes.colorCommentary()
 */
 
-let originalJazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "New Orleans", league:"NBA")
+let originalJazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "New Orleans", league: "NBA")
 let relocatedJazz = originalJazz
 relocatedJazz.affiliation = "Utah"
 originalJazz.colorCommentary()

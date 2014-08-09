@@ -10,6 +10,7 @@ class BasketballTeam {
     }
     convenience init(name:String) {
         self.init(name:name, affiliation:"Intramural Team")
+        println("Creating team named \(name)")
     }
     init(name:String, affiliation:String) {
         self.name = name
@@ -18,11 +19,23 @@ class BasketballTeam {
     func colorCommentary() -> String {
         return "The \(affiliation) \(name)"
     }
-    
-    func debugQuickLookObject() -> AnyObject? {
-        return "Hello"
+}
+
+class Announcer {
+    var name:String
+    lazy var team:BasketballTeam = BasketballTeam(name:"Old and Tired")
+    init(name:String){
+        self.name = name
+    }
+    deinit {
+        // cleanup resources
     }
 }
+
+var announcer = Announcer(name: "Booming Voice")
+println("Created \(announcer.name)")
+announcer.team.colorCommentary()
+
 
 
 class ProfessionalBasketballTeam:BasketballTeam {
@@ -52,8 +65,4 @@ class CollegeBasketballTeam:BasketballTeam {
         return super.colorCommentary() + " of the \(conference)"
     }
 }
-let jazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "New Orleans", league: "NBA")
-jazz.colorCommentary()
-jazz.affiliation = "Utah"
-jazz.colorCommentary()
 

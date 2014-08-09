@@ -5,11 +5,10 @@ var coffeeDrinks = ["Drip", "Espresso", "Americano", "Cappuccino", "Latte"]
 
 
 extension Array {
-    mutating func emphasize(modification:(T) -> T) -> [T] {
+    mutating func emphasize(modification:(T) -> T) {
             for i in 0 ..< self.count {
                 self[i] = modification(self[i])
             }
-            return self
     }
 }
 

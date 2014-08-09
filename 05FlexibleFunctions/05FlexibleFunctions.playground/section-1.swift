@@ -3,11 +3,10 @@ import Foundation
 var coffeeDrinks = ["Drip", "Espresso", "Americano", "Cappuccino", "Latte"]
 
 func emphasize(inout theContentsOf array:[String],
-               byApplying modification:(String) -> String) -> [String] {
+               byApplying modification:(String) -> String) {
     for i in 0 ..< array.count {
         array[i] = modification(array[i])
     }
-    return array
 }
 
 func upperCase(phrase:String) -> String {

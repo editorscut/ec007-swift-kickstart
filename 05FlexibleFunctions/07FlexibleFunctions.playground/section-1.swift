@@ -5,25 +5,22 @@ var numbers = [5, 1, 4, 8, 2, 7]
 
 /* without generics
 func emphasize(inout array:[String],
-               modification:(String) -> String) -> [String] {
+               modification:(String) -> String) {
         for i in 0 ..< array.count {
             array[i] = modification(array[i])
         }
-        return array
 }
 func emphasize(inout array:[Int],
-    modification:(Int) -> Int) -> [Int] {
+    modification:(Int) -> Int)  {
         for i in 0 ..< array.count {
             array[i] = modification(array[i])
         }
-        return array
 } */
 func emphasize<T>(inout array:[T],
-    modification:(T) -> T) -> [T] {
+    modification:(T) -> T) {
         for i in 0 ..< array.count {
             array[i] = modification(array[i])
         }
-        return array
 }
 
 emphasize(&coffeeDrinks) {phrase in phrase + "!"}

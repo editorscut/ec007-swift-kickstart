@@ -8,7 +8,6 @@ class BasketballTeam {
         return "The \(affiliation) \(name)"
     }
 }
-
 class ProfessionalBasketballTeam:BasketballTeam {
     let league: String
     init(name: String, affiliation: String, league:String) {
@@ -19,6 +18,7 @@ class ProfessionalBasketballTeam:BasketballTeam {
         return super.colorCommentary() + " of the \(league)"
     }
 }
+
 class CollegeBasketballTeam:BasketballTeam {
     let conference: String
     init(name: String, affiliation: String, conference:String) {
@@ -29,7 +29,7 @@ class CollegeBasketballTeam:BasketballTeam {
         return super.colorCommentary() + " of the \(conference)"
     }
 }
-let jazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "Utah", league:"NBA")
+let jazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "Utah", league: "NBA")
 jazz.colorCommentary()
 let buckeyes = CollegeBasketballTeam(name: "Buckeyes", affiliation: "Ohio State", conference:"Big Ten")
 buckeyes.colorCommentary()

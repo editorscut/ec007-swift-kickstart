@@ -23,6 +23,14 @@ class BasketballTeam {
 
 class ProfessionalBasketballTeam:BasketballTeam {
     let league: String?
+    override var affiliation:String {
+    willSet(newAffiliation) {
+        println("Before (subclass): changing affiliation from \(affiliation) to \(newAffiliation)")
+    }
+    didSet(oldAffiliation){
+        println("After (subclass): changed affiliation from \(oldAffiliation) to \(affiliation)")
+    }
+    }
     convenience init() {
         self.init(name:"Globetrotters", affiliation:"Harlem", league:nil)
     }

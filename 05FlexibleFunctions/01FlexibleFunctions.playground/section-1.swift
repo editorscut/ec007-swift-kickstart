@@ -5,7 +5,7 @@ var coffeeDrinks = ["Drip", "Espresso", "Americano", "Cappuccino", "Latte"]
 func emphasize(theContentsOf array:[String]) -> [String] {
     var temporaryArray = [String]()
     for element in array {
-        temporaryArray += element.uppercaseString
+        temporaryArray += [element.uppercaseString]
     }
     return temporaryArray
 }

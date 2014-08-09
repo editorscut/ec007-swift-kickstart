@@ -1,9 +1,9 @@
 class BasketballTeam {
     var name, affiliation:String
-    convenience init(name:String) {
+    required convenience init(name:String) {
         self.init(name:name, affiliation:"Intramural Team")
     }
-    init(name:String, affiliation:String) {
+    required init(name:String, affiliation:String) {
         self.name = name
         self.affiliation = affiliation
     }
@@ -24,6 +24,13 @@ class ProfessionalBasketballTeam:BasketballTeam {
         self.league = league
         super.init(name: name, affiliation: affiliation)
     }
+    required init(name: String, affiliation: String) {
+        league = "Neighborhood League"
+        super.init(name: name, affiliation: affiliation)
+    }
+    required convenience init(name:String) {
+        self.init(name:name, affiliation:"Intramural Team", league: "Neighborhood League")
+    }
     override func colorCommentary() -> String {
         return super.colorCommentary() + " of the \(league)"
     }
@@ -36,6 +43,10 @@ class CollegeBasketballTeam:BasketballTeam {
     }
     override func colorCommentary() -> String {
         return super.colorCommentary() + " of the \(conference)"
+    }
+    required init(name: String, affiliation: String) {
+        conference = "Neighborhood Conference"
+        super.init(name: name, affiliation: affiliation)
     }
 }
 /* version one
