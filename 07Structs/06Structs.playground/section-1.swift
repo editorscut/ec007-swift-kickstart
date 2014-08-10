@@ -11,6 +11,12 @@ func ^-^ (number:Double, power: Double) -> Double {
     return pow(number, power)
 }
 
+postfix operator ^^ {}
+
+postfix func ^^ (number:Double) -> Double {
+    return number * number
+}
+
 struct Vertex {
     var x,y: Double
     
@@ -20,7 +26,8 @@ struct Vertex {
     func distanceFrom(otherPoint: Vertex) -> Double {
         let deltaX = otherPoint.x - self.x
         let deltaY = otherPoint.y - self.y
-        let distance = √( deltaX^-^2 + deltaY^-^2)
+        //let distance = √( deltaX^-^2 + deltaY^-^2)
+        let distance = √( deltaX^^ + deltaY^^ )
         return distance
     }
 }
