@@ -16,23 +16,23 @@ let pickupTeam = BasketballTeam(name: "5 Old Guys")
 pickupTeam.colorCommentary()
 
 class ProfessionalBasketballTeam:BasketballTeam {
-    let league: String
+    let proLeague: String
     convenience init() {
         self.init(name:"Globetrotters", affiliation:"Harlem", league:"Independent League")
     }
     init(name: String, affiliation: String, league:String) {
-        self.league = league
+        self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
     required init(name: String, affiliation: String) {
-        league = "Neighborhood League"
+        proLeague = "Neighborhood League"
         super.init(name: name, affiliation: affiliation)
     }
     required convenience init(name:String) {
         self.init(name:name, affiliation:"Intramural Team", league: "Neighborhood League")
     }
     override func colorCommentary() -> String {
-        return super.colorCommentary() + " of the \(league)"
+        return super.colorCommentary() + " of the \(proLeague)"
     }
 }
 class CollegeBasketballTeam:BasketballTeam {

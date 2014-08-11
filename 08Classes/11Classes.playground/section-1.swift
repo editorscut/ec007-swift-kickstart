@@ -49,7 +49,7 @@ class BasketballTeam {
 
 
 class ProfessionalBasketballTeam:BasketballTeam {
-    let league: String?
+    let proLeague: String?
     override var affiliation:String {
         willSet(newAffiliation) {
             println("Before (subclass): changing affiliation from \(affiliation) to \(newAffiliation)")
@@ -62,13 +62,13 @@ class ProfessionalBasketballTeam:BasketballTeam {
         self.init(name:"Globetrotters", affiliation:"Harlem", league:nil)
     }
     init(name: String, affiliation: String, league:String?) {
-        self.league = league
+        self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
     override func colorCommentary() -> String {
         var comment = super.colorCommentary()
-        if let validLeague = league {
-            comment += "of the \(league!)"
+        if let validLeague = proLeague {
+            comment += "of the \(proLeague!)"
         }
         return comment
     }

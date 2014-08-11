@@ -32,20 +32,21 @@ class BasketballTeam {
 }
 
 class ProfessionalBasketballTeam:BasketballTeam {
-    let league: String
-    init(name: String, affiliation: String, league:String) {
-        self.league = league
+    let proLeague: String
+    init(name: String, affiliation: String, league: String) {
+        self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
 }
 class CollegeBasketballTeam:BasketballTeam {
     let conference: String
-    init(name: String, affiliation: String, conference:String) {
+    init(name: String, affiliation: String, conference: String) {
         self.conference = conference
         super.init(name: name, affiliation: affiliation)
     }
 }
-let jazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "Utah", league:"NBA")
+
+let jazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "Utah", league: "NBA")
 jazz.colorCommentary()
 let buckeyes = CollegeBasketballTeam(name: "Buckeyes", affiliation: "Ohio State", conference:"Big Ten")
 buckeyes.colorCommentary()

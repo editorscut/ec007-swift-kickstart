@@ -4,32 +4,35 @@ class BasketballTeam {
         self.init(name:name, affiliation:"Intramural Team")
     }
     init(name:String, affiliation:String) {
+        println("designated initializer before property inits in BasketballTeam")
         self.name = name
         self.affiliation = affiliation
+        println("designated initializer after property inits in BasketballTeam")
     }
     func colorCommentary() -> String {
-        return "The \(affiliation) \(name) "
+        return "The \(affiliation) \(name)"
     }
 }
 
 
 class ProfessionalBasketballTeam:BasketballTeam {
-    let proLeague: String?
+    let proLeague: String
     convenience init() {
-        self.init(name:"Globetrotters", affiliation:"Harlem", league:nil)
+        println("convenience initializer before self.init in ProfessionalBasketballTeam")
+        self.init(name:"Globetrotters", affiliation:"Harlem", league:"Independent League")
+        println("convenience initializer after self.init in ProfessionalBasketballTeam")
     }
-    init(name: String, affiliation: String, league:String?) {
+    init(name: String, affiliation: String, league:String) {
+        println("designated initializer before self.init in ProfessionalBasketballTeam")
         self.proLeague = league
         super.init(name: name, affiliation: affiliation)
+        println("designated initializer after self.init in ProfessionalBasketballTeam")
     }
     override func colorCommentary() -> String {
-        var comment = super.colorCommentary()
-        if let validLeague = proLeague {
-            comment += "of the \(validLeague)"
-        }
-        return comment
+        return super.colorCommentary() + " of the \(proLeague)"
     }
 }
+
 class CollegeBasketballTeam:BasketballTeam {
     let conference: String
     init(name: String, affiliation: String, conference:String) {
@@ -40,8 +43,4 @@ class CollegeBasketballTeam:BasketballTeam {
         return super.colorCommentary() + " of the \(conference)"
     }
 }
-let trotters = ProfessionalBasketballTeam()
-trotters.colorCommentary()
-let jazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "Utah", league: "NBA")
-jazz.colorCommentary()
 

@@ -1,6 +1,6 @@
 class BasketballTeam {
-    var name, affiliation:String
-    init(name:String, affiliation:String) {
+    var name, affiliation: String
+    init(name: String, affiliation: String) {
         self.name = name
         self.affiliation = affiliation
     }
@@ -9,19 +9,19 @@ class BasketballTeam {
     }
 }
 
-class ProfessionalBasketballTeam:BasketballTeam {
-    let league: String
-    init(name: String, affiliation: String, league:String) {
-        self.league = league
+class ProfessionalBasketballTeam: BasketballTeam {
+    let proLeague: String
+    init(name: String, affiliation: String, league: String) {
+        self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
     override func colorCommentary() -> String {
-        return super.colorCommentary() + " of the \(league)"
+        return super.colorCommentary() + " of the \(proLeague)"
     }
 }
-class CollegeBasketballTeam:BasketballTeam {
+class CollegeBasketballTeam: BasketballTeam {
     let conference: String
-    init(name: String, affiliation: String, conference:String) {
+    init(name: String, affiliation: String, conference: String) {
         self.conference = conference
         super.init(name: name, affiliation: affiliation)
     }
