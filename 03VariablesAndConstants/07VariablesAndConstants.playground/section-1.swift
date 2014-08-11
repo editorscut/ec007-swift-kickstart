@@ -3,7 +3,7 @@ let newline = "\n"
 var people = ["LLVM Master", "Obj-C Old-timer", "Swift Programmer"]
 
 func createGreeting(withGreeting greeting:String) -> (String) -> String {
-    func flexibleGreeting(name:String = "World") -> String {
+    func flexibleGreeting(name:String) -> String {
         return "\(greeting), \(name)!"
     }
     return flexibleGreeting

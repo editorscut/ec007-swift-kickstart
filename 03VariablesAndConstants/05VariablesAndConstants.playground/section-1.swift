@@ -13,7 +13,7 @@ greeting + newline + person
 // newline = y
 //greeting = 7
 
-func sayHello(toPersonWithName name:String = "World") -> String {
+func sayHello(toPersonWithName name:String) -> String {
     return "Hello, \(name)!"
 }
 
