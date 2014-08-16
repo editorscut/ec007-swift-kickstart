@@ -39,7 +39,15 @@ buckeyes.colorCommentary()
 */
 
 let originalJazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "New Orleans", league: "NBA")
+let cavs = ProfessionalBasketballTeam(name: "Cavaliers", affiliation: "Cleveland", league: "NBA")
+let teams = [originalJazz, cavs]
+teams[0].colorCommentary()
+teams[0].affiliation = "Utah"
+teams[0].colorCommentary()
+/* version two
 let relocatedJazz = originalJazz
 relocatedJazz.affiliation = "Utah"
 originalJazz.colorCommentary()
 relocatedJazz.colorCommentary()
+*/
+
