@@ -61,6 +61,7 @@ struct Vertex {
 }
 let pointTwo = Vertex(x: 3.0, y: 4.0)
 */
+
 struct Vertex {
     let x = 3.0
     let y = 4.0

@@ -32,7 +32,7 @@ class ProfessionalBasketballTeam:BasketballTeam {
         self.init(name:name, affiliation:"Intramural Team", league: "Neighborhood League")
     }
     override func colorCommentary() -> String {
-        return super.colorCommentary() + " of the \(proLeague)"
+        return super.colorCommentary() + " of the " + proLeague
     }
 }
 class CollegeBasketballTeam:BasketballTeam {

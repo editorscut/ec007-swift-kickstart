@@ -29,7 +29,7 @@ class ProfessionalBasketballTeam:BasketballTeam {
         println("designated initializer after self.init in ProfessionalBasketballTeam")
     }
     override func colorCommentary() -> String {
-        return super.colorCommentary() + " of the \(proLeague)"
+        return super.colorCommentary() + " of the " + proLeague
     }
 }
 class CollegeBasketballTeam:BasketballTeam {

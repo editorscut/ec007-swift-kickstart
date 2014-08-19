@@ -68,7 +68,7 @@ class ProfessionalBasketballTeam:BasketballTeam {
     override func colorCommentary() -> String {
         var comment = super.colorCommentary()
         if let validLeague = proLeague {
-            comment += "of the \(proLeague!)"
+            comment += "of the " + validLeague
         }
         return comment
     }

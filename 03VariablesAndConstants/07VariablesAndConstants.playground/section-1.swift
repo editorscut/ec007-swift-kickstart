@@ -21,6 +21,8 @@ func greet(theFollowingPeople folks:[String], withMessage message:(String) -> St
     return (folks.count, temporaryGreeting)
 }
 
+greet(theFollowingPeople: people, withMessage: hey)
+
 greet(theFollowingPeople: people, withMessage: hey).0
 
 let results = greet(theFollowingPeople: people, withMessage: hey)
