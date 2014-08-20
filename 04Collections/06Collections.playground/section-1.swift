@@ -5,5 +5,9 @@ moreNumbers = ["four"  : 4,
                "five"  : 5,
                "six"   : 6,
                "seven" : 7]
-let moreNumberKeys = [String](moreNumbers.keys)
-let moreNumberValues = [Int](moreNumbers.values)
+
+let moreNumberKeys = moreNumbers.keys
+let moreNumberValues = moreNumbers.values
+
+let moreNumberKeysArray = moreNumbers.keys.array
+let moreNumberValuesArray = moreNumbers.values.array

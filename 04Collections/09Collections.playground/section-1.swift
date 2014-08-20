@@ -1,15 +1,14 @@
 let numbers = ["one":1, "two":2, "three":3]
-let theKeys = [String](numbers.keys)
-let theValues = [Int](numbers.values)
+let theKeys = numbers.keys.array
 
 for numberKey in theKeys {
-    println("The value of \(numberKey) is \(numbers[numberKey]).")
+    println("The value of \(numberKey) is \(numbers[numberKey]!).")
 }
 for number in numbers {
     println("The value of \(number.0) is \(number.1).")
 }
-for (spelledOutNumbers, numerals) in numbers {
-    println("The value of \(spelledOutNumbers) is \(numerals).")
+for (spelledOutNumber, numeral) in numbers {
+    println("The value of \(spelledOutNumber) is \(numeral).")
 }
 
 

@@ -1,9 +1,11 @@
-var coffeeDrinks = Array(count:5, repeatedValue:"Cappuccino")
-//var coffeeDrinks = [String](count:5, repeatedValue:"Cappuccino")
+var coffeeDrinks = Array(count: 5, repeatedValue: "Cappuccino")
+//var coffeeDrinks = [String](count: 5, repeatedValue: "Cappuccino")
 
 coffeeDrinks[0] = "Drip"
 
 coffeeDrinks[2...4] = ["Espresso", "Latte"]
+
+// coffeeDrinks[7] = "Mocha"  //this is an out of range error
 
 let drink = coffeeDrinks.removeAtIndex(1)
 drink

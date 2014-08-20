@@ -1,6 +1,27 @@
 let numbers = ["one":1, "two":2]
 
 /* version 1
+let one = numbers["one"]
+let four = numbers["four"]
+3 + one
+7 + four
+*/
+
+/* version 2
+let one = numbers["one"]!
+let four = numbers["four"]
+3 + one
+7 + four
+*/
+
+/* version 3
+let one = numbers["one"]!
+let four = numbers["four"]!
+3 + one
+7 + four
+*/
+
+/* version 4
 if numbers["one"] != nil {
     let one = numbers["one"]!
     3 + one
@@ -15,6 +36,8 @@ if numbers["four"] != nil {
     println("four is nil")
 }
 */
+
+
 if let one = numbers["one"] {
     3 + one
 } else {
