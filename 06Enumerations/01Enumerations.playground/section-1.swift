@@ -9,6 +9,6 @@ var ballHandler = BasketballPosition.PointGuard
 ballHandler = BasketballPosition.PowerForward
 ballHandler = .SmallForward
 
-var shooter:BasketballPosition
+var shooter: BasketballPosition
 
 shooter = .PowerForward

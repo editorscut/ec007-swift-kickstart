@@ -1,4 +1,4 @@
-enum BasketballPosition:Int {
+enum BasketballPosition: Int {
     case PointGuard = 1, ShootingGuard
     case SmallForward, PowerForward
     case Center
@@ -6,7 +6,8 @@ enum BasketballPosition:Int {
 var ballHandler = BasketballPosition.ShootingGuard
 let positionNumber = ballHandler.toRaw()
 var colorCommentary = "The \(positionNumber) has the ball."
-switch ballHandler.toRaw() {
+
+switch ballHandler.toRaw() {  //it's better not to switch on the raw value. Just for illustration
 case 4:
     colorCommentary = "The Power Forward with the ball."
 case 1,2:

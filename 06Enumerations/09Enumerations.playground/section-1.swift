@@ -1,6 +1,6 @@
 enum BasketballPosition {    case PointGuard(Int, String), ShootingGuard(Int, String)    case SmallForward(Int, String), PowerForward(Int, String)    case Center(Int, String)
     
-    var uniformNumber:Int {
+    var uniformNumber: Int {
     get {
         switch self {
     case .PointGuard(let uniformNumber, _):
@@ -17,7 +17,7 @@ enum BasketballPosition {    case PointGuard(Int, String), ShootingGuard(Int, S
     }
     }
     
-    var playerName:String {
+    var playerName: String {
     get {
         switch self {
     case .PointGuard(_, let playerName):

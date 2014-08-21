@@ -25,3 +25,17 @@ people[0] = "LLVM Master"
 // people.append(7) //doesn't work
 people.append(person)
 people
+
+let simpleProduct = 5 * 3.4
+
+let someInt = 5
+let someDouble = 3.4
+/* version 1
+let product = someInt * someDouble
+*/
+
+//let anotherDouble = (Double)(someInt)
+let anotherDouble = Double(someInt)
+let mult = (Double)(someInt) * someDouble
+
+let product = Double(someInt) * someDouble

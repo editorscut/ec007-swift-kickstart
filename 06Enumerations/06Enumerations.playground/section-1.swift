@@ -1,4 +1,4 @@
-enum BasketballPosition:String {
+enum BasketballPosition: String {
     case PointGuard = "point guard", ShootingGuard = "shooting guard"
     case SmallForward = "small forward", PowerForward = "power forward"
     case Center = "center"
@@ -6,7 +6,7 @@ enum BasketballPosition:String {
 let ballHandler = BasketballPosition.ShootingGuard
 let ballHandlerDescription = ballHandler.toRaw()
 
-var spursPlayers:[BasketballPosition:String]
+var spursPlayers: [BasketballPosition:String]
 
 spursPlayers = [.PointGuard: "Tony Parker",
     .ShootingGuard: "Danny Green",
