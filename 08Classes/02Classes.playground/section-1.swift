@@ -8,8 +8,8 @@ var jazz = BasketballTeam()
 */
 
 class BasketballTeam {
-    let name, affiliation:String
-    init(name:String, affiliation:String) {
+    let name, affiliation: String
+    init(name: String, affiliation: String) {
         self.name = name
         self.affiliation = affiliation
     }

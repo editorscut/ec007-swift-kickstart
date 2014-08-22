@@ -22,9 +22,9 @@ class BasketballTeam {
 }
 
 class Announcer {
-    var name:String
-    lazy var team:BasketballTeam = BasketballTeam(name:"Old and Tired")
-    init(name:String){
+    var name: String
+    lazy var team: BasketballTeam = BasketballTeam(name: "Old and Tired")
+    init(name: String){
         self.name = name
     }
     deinit {
@@ -32,18 +32,18 @@ class Announcer {
     }
 }
 
-var announcer = Announcer(name: "Booming Voice")
+let announcer = Announcer(name: "Booming Voice")
 println("Created \(announcer.name)")
 announcer.team.colorCommentary()
 
 
 
-class ProfessionalBasketballTeam:BasketballTeam {
+class ProfessionalBasketballTeam: BasketballTeam {
     let proLeague: String?
     convenience init() {
-        self.init(name:"Globetrotters", affiliation:"Harlem", league:nil)
+        self.init(name: "Globetrotters", affiliation: "Harlem", league: nil)
     }
-    init(name: String, affiliation: String, league:String?) {
+    init(name: String, affiliation: String, league: String?) {
         self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
@@ -55,9 +55,9 @@ class ProfessionalBasketballTeam:BasketballTeam {
         return comment
     }
 }
-class CollegeBasketballTeam:BasketballTeam {
+class CollegeBasketballTeam: BasketballTeam {
     let conference: String
-    init(name: String, affiliation: String, conference:String) {
+    init(name: String, affiliation: String, conference: String) {
         self.conference = conference
         super.init(name: name, affiliation: affiliation)
     }

@@ -1,9 +1,9 @@
 class BasketballTeam {
-    var name, affiliation:String
-    required convenience init(name:String) {
-        self.init(name:name, affiliation:"Intramural Team")
+    var name, affiliation: String
+    required convenience init(name: String) {
+        self.init(name: name, affiliation: "Intramural Team")
     }
-    required init(name:String, affiliation:String) {
+    required init(name: String, affiliation: String) {
         self.name = name
         self.affiliation = affiliation
     }
@@ -15,12 +15,12 @@ class BasketballTeam {
 let pickupTeam = BasketballTeam(name: "5 Old Guys")
 pickupTeam.colorCommentary()
 
-class ProfessionalBasketballTeam:BasketballTeam {
+class ProfessionalBasketballTeam: BasketballTeam {
     let proLeague: String
     convenience init() {
-        self.init(name:"Globetrotters", affiliation:"Harlem", league:"Independent League")
+        self.init(name: "Globetrotters", affiliation: "Harlem", league: "Independent League")
     }
-    init(name: String, affiliation: String, league:String) {
+    init(name: String, affiliation: String, league: String) {
         self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
@@ -28,16 +28,16 @@ class ProfessionalBasketballTeam:BasketballTeam {
         proLeague = "Neighborhood League"
         super.init(name: name, affiliation: affiliation)
     }
-    required convenience init(name:String) {
-        self.init(name:name, affiliation:"Intramural Team", league: "Neighborhood League")
+    required convenience init(name: String) {
+        self.init(name: name, affiliation: "Intramural Team", league: "Neighborhood League")
     }
     override func colorCommentary() -> String {
         return super.colorCommentary() + " of the " + proLeague
     }
 }
-class CollegeBasketballTeam:BasketballTeam {
+class CollegeBasketballTeam: BasketballTeam {
     let conference: String
-    init(name: String, affiliation: String, conference:String) {
+    init(name: String, affiliation: String, conference: String) {
         self.conference = conference
         super.init(name: name, affiliation: affiliation)
     }
@@ -58,7 +58,7 @@ let buckeyes = CollegeBasketballTeam(name: "Buckeyes", affiliation: "Ohio State"
 buckeyes.colorCommentary()
 */
 
-let originalJazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "New Orleans", league:"NBA")
+let originalJazz = ProfessionalBasketballTeam(name: "Jazz", affiliation: "New Orleans", league: "NBA")
 let relocatedJazz = originalJazz
 relocatedJazz.affiliation = "Utah"
 originalJazz.colorCommentary()

@@ -2,32 +2,32 @@ import Foundation
 
 prefix operator  √ {}
 
-prefix func √ (argument:Double) -> Double {
+prefix func √ (argument: Double) -> Double {
     return sqrt(argument)
 }
 infix operator  ^-^ {precedence 160}
 
-func ^-^ (number:Double, power: Double) -> Double {
+func ^-^ (number: Double, power: Double) -> Double {
     return pow(number, power)
 }
 
 postfix operator ^^ {}
 
-postfix func ^^ (number:Double) -> Double {
+postfix func ^^ (number: Double) -> Double {
     return number * number
 }
 
 struct Vertex {
     var x,y: Double
-    var distanceFromOrigin:Double {
-        let origin:Vertex = Vertex(x: 0, y: 0)
+    var distanceFromOrigin: Double {
+        let origin: Vertex = Vertex(x: 0, y: 0)
         return distanceFrom(origin)
     }
-    mutating func scaleBy(multiplier:Double) {
+    mutating func scaleBy(multiplier: Double) {
         x *= multiplier
         y *= multiplier
     }
-    mutating func moveBy(x:Double, y:Double) {
+    mutating func moveBy(x: Double, y: Double) {
         self.x += x
         self.y += y
     }

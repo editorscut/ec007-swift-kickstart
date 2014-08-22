@@ -1,9 +1,9 @@
 class BasketballTeam {
-    var name, affiliation:String
-    convenience init(name:String) {
-        self.init(name:name, affiliation:"Intramural Team")
+    var name, affiliation: String
+    convenience init(name: String) {
+        self.init(name: name, affiliation: "Intramural Team")
     }
-    init(name:String, affiliation:String) {
+    init(name: String, affiliation:String) {
         self.name = name
         self.affiliation = affiliation
     }
@@ -13,12 +13,12 @@ class BasketballTeam {
 }
 
 
-class ProfessionalBasketballTeam:BasketballTeam {
+class ProfessionalBasketballTeam: BasketballTeam {
     let proLeague: String?
     convenience init() {
-        self.init(name:"Globetrotters", affiliation:"Harlem", league:nil)
+        self.init(name: "Globetrotters", affiliation: "Harlem", league: nil)
     }
-    init(name: String, affiliation: String, league:String?) {
+    init(name: String, affiliation: String, league: String?) {
         self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
@@ -32,7 +32,7 @@ class ProfessionalBasketballTeam:BasketballTeam {
 }
 class CollegeBasketballTeam:BasketballTeam {
     let conference: String
-    init(name: String, affiliation: String, conference:String) {
+    init(name: String, affiliation: String, conference: String) {
         self.conference = conference
         super.init(name: name, affiliation: affiliation)
     }

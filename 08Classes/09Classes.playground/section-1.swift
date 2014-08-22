@@ -1,6 +1,6 @@
 class BasketballTeam {
-    var name:String
-    var affiliation:String {
+    var name: String
+    var affiliation: String {
     willSet(newAffiliation) {
         println("Before: changing affiliation from \(affiliation) to \(newAffiliation)")
     }
@@ -8,10 +8,10 @@ class BasketballTeam {
         println("After: changed affiliation from \(oldAffiliation) to \(affiliation)")
     }
     }
-    convenience init(name:String) {
-        self.init(name:name, affiliation:"Intramural Team")
+    convenience init(name: String) {
+        self.init(name: name, affiliation: "Intramural Team")
     }
-    init(name:String, affiliation:String) {
+    init(name: String, affiliation: String) {
         self.name = name
         self.affiliation = affiliation
     }
@@ -21,9 +21,9 @@ class BasketballTeam {
 }
 
 
-class ProfessionalBasketballTeam:BasketballTeam {
+class ProfessionalBasketballTeam: BasketballTeam {
     let proLeague: String?
-    override var affiliation:String {
+    override var affiliation: String {
     willSet(newAffiliation) {
         println("Before (subclass): changing affiliation from \(affiliation) to \(newAffiliation)")
     }
@@ -32,9 +32,9 @@ class ProfessionalBasketballTeam:BasketballTeam {
     }
     }
     convenience init() {
-        self.init(name:"Globetrotters", affiliation:"Harlem", league:nil)
+        self.init(name: "Globetrotters", affiliation: "Harlem", league: nil)
     }
-    init(name: String, affiliation: String, league:String?) {
+    init(name: String, affiliation: String, league: String?) {
         self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
@@ -46,9 +46,9 @@ class ProfessionalBasketballTeam:BasketballTeam {
         return comment
     }
 }
-class CollegeBasketballTeam:BasketballTeam {
+class CollegeBasketballTeam: BasketballTeam {
     let conference: String
-    init(name: String, affiliation: String, conference:String) {
+    init(name: String, affiliation: String, conference: String) {
         self.conference = conference
         super.init(name: name, affiliation: affiliation)
     }

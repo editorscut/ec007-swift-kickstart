@@ -1,6 +1,6 @@
 class BasketballTeam {
     let name, affiliation:String
-    init(name:String, affiliation:String) {
+    init(name: String, affiliation: String) {
         self.name = name
         self.affiliation = affiliation
     }
@@ -8,7 +8,7 @@ class BasketballTeam {
         return "The \(affiliation) \(name)"
     }
 }
-class ProfessionalBasketballTeam:BasketballTeam {
+class ProfessionalBasketballTeam: BasketballTeam {
     let proLeague: String
     init(name: String, affiliation: String, league: String) {
         self.proLeague = league
@@ -19,7 +19,7 @@ class ProfessionalBasketballTeam:BasketballTeam {
     }
 }
 
-class CollegeBasketballTeam:BasketballTeam {
+class CollegeBasketballTeam: BasketballTeam {
     let conference: String
     init(name: String, affiliation: String, conference: String) {
         self.conference = conference

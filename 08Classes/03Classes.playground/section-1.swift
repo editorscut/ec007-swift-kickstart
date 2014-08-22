@@ -31,14 +31,14 @@ class BasketballTeam {
     }
 }
 
-class ProfessionalBasketballTeam:BasketballTeam {
+class ProfessionalBasketballTeam: BasketballTeam {
     let proLeague: String
     init(name: String, affiliation: String, league: String) {
         self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
 }
-class CollegeBasketballTeam:BasketballTeam {
+class CollegeBasketballTeam: BasketballTeam {
     let conference: String
     init(name: String, affiliation: String, conference: String) {
         self.conference = conference

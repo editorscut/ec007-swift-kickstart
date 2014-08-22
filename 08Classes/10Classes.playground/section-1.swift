@@ -1,14 +1,14 @@
 // MARK: Struct Example
 
 struct Size {
-    var width:Double = 10.0 {
+    var width: Double = 10.0 {
         didSet {
             if width < height {
                 width = height
             }
         }
     }
-    var height:Double = 5.0 {
+    var height: Double = 5.0 {
         didSet {
             if height > width {
                 height = width
@@ -26,8 +26,8 @@ size
 // MARK: Continuing with classes
 
 class BasketballTeam {
-    var name:String
-    var affiliation:String {
+    var name: String
+    var affiliation: String {
         willSet(newAffiliation) {
             println("Before: changing affiliation from \(affiliation) to \(newAffiliation)")
         }
@@ -35,10 +35,10 @@ class BasketballTeam {
             println("After: changed affiliation from \(oldAffiliation) to \(affiliation)")
         }
     }
-    convenience init(name:String) {
-        self.init(name:name, affiliation:"Intramural Team")
+    convenience init(name: String) {
+        self.init(name: name, affiliation: "Intramural Team")
     }
-    init(name:String, affiliation:String) {
+    init(name: String, affiliation: String) {
         self.name = name
         self.affiliation = affiliation
     }
@@ -48,9 +48,9 @@ class BasketballTeam {
 }
 
 
-class ProfessionalBasketballTeam:BasketballTeam {
+class ProfessionalBasketballTeam: BasketballTeam {
     let proLeague: String?
-    override var affiliation:String {
+    override var affiliation: String {
         willSet(newAffiliation) {
             println("Before (subclass): changing affiliation from \(affiliation) to \(newAffiliation)")
         }
@@ -59,9 +59,9 @@ class ProfessionalBasketballTeam:BasketballTeam {
         }
     }
     convenience init() {
-        self.init(name:"Globetrotters", affiliation:"Harlem", league:nil)
+        self.init(name: "Globetrotters", affiliation: "Harlem", league: nil)
     }
-    init(name: String, affiliation: String, league:String?) {
+    init(name: String, affiliation: String, league: String?) {
         self.proLeague = league
         super.init(name: name, affiliation: affiliation)
     }
@@ -74,9 +74,9 @@ class ProfessionalBasketballTeam:BasketballTeam {
     }
 }
 
-class NBATeam:ProfessionalBasketballTeam {
+class NBATeam: ProfessionalBasketballTeam {
     init(name: String, affiliation: String) {
-        super.init(name: name, affiliation: affiliation, league:"NBA")
+        super.init(name: name, affiliation: affiliation, league: "NBA")
     }
     var roster:[String] = [String](){
         didSet(previousRoster) {

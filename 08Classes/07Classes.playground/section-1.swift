@@ -1,9 +1,9 @@
 class BasketballTeam {
-    var name, affiliation:String
-    convenience init(name:String) {
-        self.init(name:name, affiliation:"Intramural Team")
+    var name, affiliation: String
+    convenience init(name: String) {
+        self.init(name: name, affiliation: "Intramural Team")
     }
-    init(name:String, affiliation:String) {
+    init(name:String, affiliation: String) {
         println("designated initializer before property inits in BasketballTeam")
         self.name = name
         self.affiliation = affiliation
@@ -15,11 +15,11 @@ class BasketballTeam {
 }
 
 
-class ProfessionalBasketballTeam:BasketballTeam {
+class ProfessionalBasketballTeam: BasketballTeam {
     let proLeague: String
     convenience init() {
         println("convenience initializer before self.init in ProfessionalBasketballTeam")
-        self.init(name:"Globetrotters", affiliation:"Harlem", league:"Independent League")
+        self.init(name: "Globetrotters", affiliation: "Harlem", league: "Independent League")
         println("convenience initializer after self.init in ProfessionalBasketballTeam")
     }
     init(name: String, affiliation: String, league:String) {
@@ -32,9 +32,9 @@ class ProfessionalBasketballTeam:BasketballTeam {
         return super.colorCommentary() + " of the " + proLeague
     }
 }
-class CollegeBasketballTeam:BasketballTeam {
+class CollegeBasketballTeam: BasketballTeam {
     let conference: String
-    init(name: String, affiliation: String, conference:String) {
+    init(name: String, affiliation: String, conference: String) {
         self.conference = conference
         super.init(name: name, affiliation: affiliation)
     }
