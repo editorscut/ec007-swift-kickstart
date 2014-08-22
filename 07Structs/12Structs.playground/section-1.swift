@@ -1,32 +1,37 @@
-protocol PositionDescribable {
-    var positionName: String { get }
+protocol Playable {
+    var name: String { get }
+}
+struct BasketballPlayer: Playable {
+    let name: String
+}
+struct HockeyPlayer {
+    let name: String
+}
+extension HockeyPlayer: Playable {}
+struct DigitalMusicPlayer {
+    let format: String
+}
+func announceNameFor(player: Playable) {
+    println(player.name)
 }
 
-enum BasketballPosition: Int {
-    case PointGuard, ShootingGuard, SmallForward, PowerForward, Center
+let tonyParker = BasketballPlayer(name: "Tony Parker")
+let lebronJames = BasketballPlayer(name: "Lebron James")
+let sidneyCrosbey = HockeyPlayer(name: "Sidney Crosbey")
+
+println(tonyParker.name)
+announceNameFor(tonyParker)
+
+announceNameFor(sidneyCrosbey)
+/* version 1
+func canPlayOneOnOne(playerOne: Playable,playerTwo: Playable) -> Bool {
+    return playerOne.name != playerTwo.name
 }
-extension BasketballPosition: PositionDescribable {
-    var positionName: String {
-    let names = ["point guard", "shooting guard", "small forward", "power forward", "center"]
-    return names[self.toRaw()]}
-}
-
-
-enum HockeyPosition: Int {
-    case Goalie, LeftDefenseman, RightDefenseman, LeftWing, RightWing
-    var positionName: String {
-    let names = ["goalie", "left d", "right d", "left wing", "right wing"]
-    return names[self.toRaw()]}
-}
-
-extension HockeyPosition: PositionDescribable {}
-
-func describePosition(position: PositionDescribable) -> String {
-    return position.positionName
+*/
+func canPlayOneOnOne<T: Playable>(playerOne: T,playerTwo: T) -> Bool {
+    return playerOne.name != playerTwo.name
 }
 
-println( describePosition(BasketballPosition.Center))
-
-let hockeyPosition = HockeyPosition.RightWing
-println(hockeyPosition.positionName)
-println(describePosition(hockeyPosition))
+canPlayOneOnOne(tonyParker, tonyParker)
+//canPlayOneOnOne(tonyParker, sidneyCrosbey)  // error works with version 1
+canPlayOneOnOne(tonyParker, lebronJames)
