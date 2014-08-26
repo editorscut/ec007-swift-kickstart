@@ -14,36 +14,33 @@ class HourlyEmployee : Employee {
     var numberOfHours = 0
 }
 
-// version 1
-func payEmployee(employee : Employee) -> Int {
-    if employee is SalariedEmployee {
-        return numberOfHoursInStandardWeek * employee.hourlyWage
-    } else {
-        return 0
-    }
-}
-//
-/* version 2 with error
-func payEmployee(employee : Employee) -> Int {
-    if employee is SalariedEmployee {
-        return numberOfHoursInStandardWeek * employee.hourlyWage
-    } else {
-        return employee.numberOfHours * employee.hourlyWage
-    }
-}
-*/
-/* version 3 with error
+/* version 1
 func payEmployee(employee : Employee) -> Int {
     if employee is SalariedEmployee {
         return numberOfHoursInStandardWeek * employee.hourlyWage
     } else if employee is HourlyEmployee {
-        return employee.numberOfHours * employee.hourlyWage
+        let hourlyEmployee = employee as HourlyEmployee
+        return hourlyEmployee.numberOfHours * hourlyEmployee.hourlyWage
     } else {
         return 0
     }
 }
 */
 
+func payEmployee(employee : Employee) -> Int {
+    if employee is SalariedEmployee {
+        return numberOfHoursInStandardWeek * employee.hourlyWage
+    } else if let hourlyEmployee = employee as? HourlyEmployee {
+        return hourlyEmployee.numberOfHours * hourlyEmployee.hourlyWage
+    } else {
+        return 0
+    }
+}
+
 let manager = SalariedEmployee(hourlyWage: 100)
 payEmployee(manager)
+
+let engineer = HourlyEmployee(hourlyWage: 60)
+engineer.numberOfHours = 50
+payEmployee(engineer)
 

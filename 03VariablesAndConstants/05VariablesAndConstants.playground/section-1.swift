@@ -37,5 +37,5 @@ let product = someInt * someDouble
 //let anotherDouble = (Double)(someInt)
 let anotherDouble = Double(someInt)
 let mult = (Double)(someInt) * someDouble
-
 let product = Double(someInt) * someDouble
+
