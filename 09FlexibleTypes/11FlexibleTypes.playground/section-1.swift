@@ -16,20 +16,29 @@ let sidneyCrosbey = HockeyPlayer(name: "Sidney Crosbey")
 protocol Groupable {
     typealias TeamPlayer
     func add(player: TeamPlayer)
-    func list() -> String
 }
 
 class Team {
     var players = [Player]()
     func list() -> String {
-        var temp = ""
-        for player in players {
-            temp += player.name + "\n"
-        }
-        return temp
+        return players.map{$0.name}.reduce("Roster:"){$0 + "\n" + $1}
     }
 }
 
+/* version with TeamPlayer as the type for the add() parameter
+class BasketballTeam: Team, Groupable {
+typealias TeamPlayer = BasketballPlayer
+    func add(player: TeamPlayer) {
+        players.append(player)
+    }
+}
+class HockeyTeam: Team, Groupable {
+    typealias TeamPlayer = HockeyPlayer
+    func add(player: TeamPlayer) {
+        players.append(player)
+    }
+}
+*/
 class BasketballTeam: Team, Groupable {
     typealias TeamPlayer = BasketballPlayer
     func add(player: BasketballPlayer) {
@@ -43,7 +52,7 @@ class HockeyTeam: Team, Groupable {
     }
 }
 let cavs = BasketballTeam()
-let penguins = HockeyTeam()
+cavs.add(lebronJames)
 cavs.add(tonyParker)
 cavs.list()
-cavs.add(sidneyCrosbey)
+// cavs.add(sidneyCrosbey) this is an error (on purpose)
