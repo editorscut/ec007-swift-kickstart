@@ -31,3 +31,9 @@ for (index, kindOfDrink) in enumerate(coffeeDrinks) {
     results += item(number: index + 1) + kindOfDrink
 }
 results
+
+
+
+
+
+

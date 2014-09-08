@@ -84,10 +84,10 @@ class NBATeam: ProfessionalBasketballTeam {
             let previousCount = previousRoster.count
             let existingTeamHasValidRoster = previousCount >= 8 && previousCount <= 12
             if count < 8 && existingTeamHasValidRoster {
-                println("You need \(8 - count) more.")
+                println("You need \(8 - count) more. Not changing roster.")
                 roster = previousRoster
             } else if count > 12 && existingTeamHasValidRoster {
-                println("This is \(count - 12) more than allowed.")
+                println("This is \(count - 12) more than allowed. Not changing roster.")
                 roster = previousRoster
             }
             println("The roster is \(roster). \n")
