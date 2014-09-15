@@ -2,13 +2,12 @@ let newline = "\n"
 
 var people = ["LLVM Master", "Obj-C Old-timer", "Swift Programmer"]
 
-/* version 1
 func sayHello(toPersonWithName name: String) -> String {
     return "Hello, \(name)"
 }
 
-let hello = sayHello
-*/
+let simpleHello = sayHello
+simpleHello(toPersonWithName: "Swift Programmer")
 
 
 func createGreeting(withGreeting greeting: String) -> (String) -> String {
