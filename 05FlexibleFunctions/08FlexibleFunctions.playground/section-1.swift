@@ -1,5 +1,3 @@
-import Foundation
-
 var numbers = [5, 1, 4, 8, 2, 7]
 
 /* I prefer not to use the type information for sort() and sorted()
