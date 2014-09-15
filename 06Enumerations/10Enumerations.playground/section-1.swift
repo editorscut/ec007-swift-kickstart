@@ -45,7 +45,6 @@ extension BasketballPosition: PlayerDescribable {
 }
 
 
-
 var ballHandler = BasketballPosition.PowerForward(21, "Tim Duncan")
 
 func commentary (position: PlayerDescribable) -> String {
