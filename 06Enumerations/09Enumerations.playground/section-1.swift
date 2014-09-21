@@ -1,7 +1,7 @@
 enum BasketballPosition {    case PointGuard(Int, String), ShootingGuard(Int, String)    case SmallForward(Int, String), PowerForward(Int, String)    case Center(Int, String)
     
     var uniformNumber: Int {
-    get {
+        get {
         switch self {
     case .PointGuard(let uniformNumber, _):
         return uniformNumber
@@ -14,11 +14,11 @@ enum BasketballPosition {    case PointGuard(Int, String), ShootingGuard(Int, S
     case .Center(let uniformNumber, _):
                 return uniformNumber
         }
-    }
+        }
     }
     
     var playerName: String {
-    get {
+            get {
         switch self {
     case .PointGuard(_, let playerName):
         return playerName
@@ -31,12 +31,20 @@ enum BasketballPosition {    case PointGuard(Int, String), ShootingGuard(Int, S
     case .Center(_, let playerName):
                 return playerName
         }
-    }
+            }
     }
     
     func playerDescription() -> String {
-        return "The ball handler is number \(self.uniformNumber), \(self.playerName)."
+                return "The ball handler is number \(self.uniformNumber), \(self.playerName)."
+    }
+    static func count() -> Int {
+        return 5
     }}
+
+BasketballPosition.count()
+
+//let pointGuard = BasketballPosition.PointGuard(9, "Tony Parker")
+//pointGuard.count()
 
 //let tonyParker = BasketballPosition.PointGuard(9, "Tony Parker")
 //let timDuncan = BasketballPosition.PowerForward(21, "Tim Duncan")

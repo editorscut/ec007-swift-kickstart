@@ -78,27 +78,59 @@ class NBATeam: ProfessionalBasketballTeam {
     init(name: String, affiliation: String) {
         super.init(name: name, affiliation: affiliation, league: "NBA")
     }
-    var roster:[String] = [String](){
-        didSet(previousRoster) {
-            let count = roster.count
-            let previousCount = previousRoster.count
-            let existingTeamHasValidRoster = previousCount >= 8 && previousCount <= 12
-            if count < 8 && existingTeamHasValidRoster {
-                println("You need \(8 - count) more. Not changing roster.")
-                roster = previousRoster
-            } else if count > 12 && existingTeamHasValidRoster {
-                println("This is \(count - 12) more than allowed. Not changing roster.")
-                roster = previousRoster
-            }
-            println("The roster is \(roster). \n")
+    private var roster:[String] = [String]() //{
+//        didSet(previousRoster) {
+//            let count = roster.count
+//            let previousCount = previousRoster.count
+//            let existingTeamHasValidRoster = previousCount >= 8 && previousCount <= 12
+//            if count < 8 && existingTeamHasValidRoster {
+//                println("You need \(8 - count) more. Not changing roster.")
+//                roster = previousRoster
+//            } else if count > 12 && existingTeamHasValidRoster {
+//                println("This is \(count - 12) more than allowed. Not changing roster.")
+//                roster = previousRoster
+//            }
+//            println("The roster is \(roster). \n")
+//        }
+    //}
+    var count: Int {
+        return roster.count
+    }
+    class var maximumNumberOfPlayers: Int {
+        return 12
+    }
+    subscript(index: Int) -> String {
+        get {
+            assert(index < count, "Index is out of range")
+            return roster[index]
+        }
+        set(newValue) {
+            assert(index < count, "Index is out of range")
+            roster[index] = newValue
         }
     }
 }
 
 let jazz = NBATeam(name: "Jazz", affiliation: "Utah")
 jazz.roster += ["Favors", "Kanter", "Burks", "Burke", "Hayward", "Booker", "Gobert", "Felix"]
-jazz.roster.removeLast()
+//jazz.roster.removeLast()
 jazz.roster += ["Novak", "Evans",  "Clark"]
 jazz.roster += ["Exum", "Hood"]
 
+jazz[3]
 
+jazz[3] = "The New Guy"
+
+
+
+func teamRoster(team: NBATeam) {
+    println("The roster for the \(team.name) is")
+    for i in 0 ..<  min(team.count, NBATeam.maximumNumberOfPlayers) {
+        println("\t \(team[i])")
+    }
+}
+
+teamRoster(jazz)
+
+//let cavs = NBATeam(name: "Cavaliers", affiliation: "Cleveland")
+//cavs[0]
