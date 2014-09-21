@@ -10,13 +10,13 @@ for  var index = 0; index  < coffeeDrinks.count; index++  {
 */
 
 /* method 2
-for index in 0...(coffeeDrinks.count - 1) {
+for index in 0 ... (coffeeDrinks.count - 1) {
     results += item(number: index + 1) + coffeeDrinks[index]
 }
 */
 
 /* method 3
-for index in 0..<coffeeDrinks.count  {
+for index in 0 ..< coffeeDrinks.count  {
 results += item(number: index + 1) + coffeeDrinks[index]
 } 
 */

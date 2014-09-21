@@ -1,7 +1,3 @@
-
-
-
-
 let coffeeDrinks = ["Drip", "Espresso", "Americano", "Cappuccino", "Latte"]
 func item(#number:Int) -> String {
     return "\n ( \(number) ) "
