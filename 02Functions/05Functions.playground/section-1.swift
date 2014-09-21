@@ -4,7 +4,7 @@ func helloWorld(name: String = "World") {
 
 func helloWorld(name: String, numberOfTimes: Int = 1) {
     println("Number of times: \(numberOfTimes)")
-    for i in 1...numberOfTimes {
+    for i in 1 ... numberOfTimes {
         print("\t(\(i)) ")
         helloWorld(name: name)
     }
