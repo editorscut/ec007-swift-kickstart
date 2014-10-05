@@ -11,3 +11,7 @@ let moreNumberValues = moreNumbers.values
 
 let moreNumberKeysArray = moreNumbers.keys.array
 let moreNumberValuesArray = moreNumbers.values.array
+
+for number in moreNumberKeys {
+    println("\(number) : \(moreNumbers[number]!)")
+}
