@@ -4,4 +4,4 @@ enum BasketballPosition: String {
     case Center = "center"
 }
 let ballHandler = BasketballPosition.ShootingGuard
-let ballHandlerDescription = ballHandler.toRaw()
+let ballHandlerDescription = ballHandler.rawValue

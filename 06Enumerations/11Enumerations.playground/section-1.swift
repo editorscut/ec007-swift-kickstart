@@ -60,7 +60,7 @@ enum HockeyPosition: String {
 
 extension HockeyPosition: PlayerDescribable {
     func playerDescription() -> String {
-        return "The puck handler is the \(self.toRaw())."
+        return "The puck handler is the \(self.rawValue)."
     }
 }
 

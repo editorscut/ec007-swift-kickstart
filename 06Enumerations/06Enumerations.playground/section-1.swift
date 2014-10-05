@@ -4,7 +4,7 @@ enum BasketballPosition: String {
     case Center = "center"
 }
 let ballHandler = BasketballPosition.ShootingGuard
-let ballHandlerDescription = ballHandler.toRaw()
+let ballHandlerDescription = ballHandler.rawValue
 
 var spursPlayers: [BasketballPosition:String]
 
@@ -20,5 +20,5 @@ func checkTheFloor() -> Bool {
 checkTheFloor()
 spursPlayers[.ShootingGuard] = "Manu Ginobili"
 for (position, playerName) in spursPlayers {
-    println("The \(position.toRaw()) is \(playerName).")
+    println("The \(position.rawValue) is \(playerName).")
 }

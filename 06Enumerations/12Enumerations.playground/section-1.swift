@@ -7,15 +7,15 @@ enum BasketballPosition:String {
 var playerOne = BasketballPosition.PointGuard
 var playerTwo = playerOne
 
-playerOne.toRaw()
-playerTwo.toRaw()
+playerOne.rawValue
+playerTwo.rawValue
 
 playerOne = .ShootingGuard
 
-playerOne.toRaw()
-playerTwo.toRaw()
+playerOne.rawValue
+playerTwo.rawValue
 
 playerTwo = .Center
 
-playerOne.toRaw()
-playerTwo.toRaw()
+playerOne.rawValue
+playerTwo.rawValue

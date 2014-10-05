@@ -4,13 +4,16 @@ enum BasketballPosition: Int {
     case Center
 }
 var potentialBallHandler: BasketballPosition?
-potentialBallHandler = BasketballPosition.fromRaw(3)
+potentialBallHandler = BasketballPosition(rawValue: 3)
 
 if potentialBallHandler != nil {
     let ballHandler = potentialBallHandler!
-    let positionNumber = ballHandler.toRaw()
+    let positionNumber = ballHandler.rawValue
 }
 
 if let ballHandler = potentialBallHandler {
-    let positionNumber = ballHandler.toRaw()
+    let positionNumber = ballHandler.rawValue
 }
+
+let someInt = 3
+let aDouble = Double(someInt)

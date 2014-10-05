@@ -4,7 +4,7 @@ enum BasketballPosition: Int {
         return 5
     }
     subscript(index: Int) -> BasketballPosition? {
-        return BasketballPosition.fromRaw(index)
+        return BasketballPosition(rawValue: index)
     }
 }
 
@@ -21,7 +21,7 @@ basketballPosition[3]
 
 for i in 0 ..< BasketballPosition.count() {
     if let position = basketballPosition[i] {
-    println("Playing the \(position.toRaw() + 1 ), it's \(spursPlayers[position]!).")
+    println("Playing the \(position.rawValue + 1 ), it's \(spursPlayers[position]!).")
     } else {
         println("No one is playing the \(i + 1).")
     }
