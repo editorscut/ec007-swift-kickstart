@@ -7,7 +7,7 @@ func helloWorld(name: String) {
 func helloWorld(name: String, numberOfTimes: Int) {
     println("Number of times: \(numberOfTimes)")
     for i in 1 ... numberOfTimes {
-           print("\t(\(i)) ")
+        print("\t(\(i)) ")
         helloWorld(name)
     }
 }
