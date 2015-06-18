@@ -1,0 +1,15 @@
+//: ### Variadic Parameters
+
+func hello(peopleNamed people: String...) {
+    if people.isEmpty {
+        print("Hello, World!")
+    }
+    for person in people {
+        print("Hello, \(person)!")
+    }
+}
+
+hello(peopleNamed: "Swift Programmer", "Swift 2 Developer")
+hello()
+
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)

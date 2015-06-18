@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+    <pages>
+        <page name='TOC'/>
+        <page name='No Parameter, No Return'/>
+        <page name='Single Parameter'/>
+        <page name='Overloading'/>
+        <page name='Multiple Parameters'/>
+        <page name='Default Values'/>
+        <page name='External Names'/>
+        <page name='Variadic Parameters'/>
+        <page name='Return Values'/>
+        <page name='Returning Tuples'/>
+        <page name='Untitled Page 7'/>
+        <page name='Untitled Page'/>
+    </pages>
+</playground>
