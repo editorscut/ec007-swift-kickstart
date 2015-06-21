@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+    <pages>
+        <page name='TOC'/>
+        <page name='Inferring Type'/>
+        <page name='Let'/>
+        <page name='Var'/>
+        <page name='Types'/>
+        <page name='Numeric Types'/>
+        <page name='Nil'/>
+        <page name='Higher Order Functions'/>
+        <page name='Tuples'/>
+    </pages>
+</playground>
