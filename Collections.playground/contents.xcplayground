@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+    <pages>
+        <page name='TOC'/>
+        <page name='One Type'/>
+        <page name='Create Arrays'/>
+        <page name='Modify Arrays'/>
+        <page name='Enumerate Arrays'/>
+        <page name='Value and Reference Types'/>
+        <page name='Create Dictionaries'/>
+        <page name='Modify Dictionaries'/>
+        <page name='Optionals and Dictionaries'/>
+        <page name='Enumerate Dictionaries'/>
+        <page name='Sets'/>
+    </pages>
+</playground>
