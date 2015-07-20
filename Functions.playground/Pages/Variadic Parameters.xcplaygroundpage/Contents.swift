@@ -1,5 +1,8 @@
 //: ### Variadic Parameters
 
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
+
+
 func hello(peopleNamed people: String...) {
     if people.isEmpty {
         print("Hello, World!")

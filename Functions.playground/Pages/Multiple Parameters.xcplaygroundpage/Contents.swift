@@ -1,5 +1,8 @@
 //: ### Multiple Parameters
 
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
+
+
 func hello() {
     hello("World")
 }

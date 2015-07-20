@@ -1,5 +1,8 @@
 //: ### Return Values
 
+//: [TOC](TOC) | [Previous](@previous) | Next
+
+
 func hello(names: String...) -> (count: Int, peopleList: String) {
     return (names.count, names.reduce("Hello,"){$0 + "\n " + $1})
 }
