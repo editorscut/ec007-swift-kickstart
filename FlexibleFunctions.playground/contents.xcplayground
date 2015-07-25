@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+    <pages>
+        <page name='TOC'/>
+        <page name='Function Parameters'/>
+        <page name='Reference Types'/>
+        <page name='Inout Parameters'/>
+        <page name='Return Values'/>
+        <page name='Extensions'/>
+        <page name='Higher Order Functions'/>
+        <page name='Closure Expressions'/>
+        <page name='Generics'/>
+        <page name='Transforming Arrays'/>
+        <page name='Understanding Map'/>
+    </pages>
+</playground>
