@@ -22,5 +22,12 @@ let revenue = numberOfCopies.transform{Double($0) * 0.99 * 0.70}
 
 revenue
 
+let isBiggerThanTenMap = numberOfCopies.map{$0 > 10}
+
+isBiggerThanTenMap
+
+let revenueMap = numberOfCopies.map{Double($0) * 0.99 * 0.70}
+
+revenueMap
 
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)
