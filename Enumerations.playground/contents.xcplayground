@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+    <pages>
+        <page name='TOC'/>
+        <page name='Creating an Enumeration'/>
+        <page name='The Switch Statement'/>
+        <page name='Methods'/>
+        <page name='Computed Properties'/>
+        <page name='String Raw Values'/>
+        <page name='Numerical Raw Values'/>
+        <page name='Associated Values'/>
+        <page name='Binding to Associated Values'/>
+        <page name='By Value'/>
+        <page name='Protocols'/>
+    </pages>
+</playground>
