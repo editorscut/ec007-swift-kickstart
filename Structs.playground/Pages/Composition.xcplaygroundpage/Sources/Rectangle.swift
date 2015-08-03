@@ -6,6 +6,16 @@ public struct Rectangle {
         self.topLeftCorner = topLeftCorner
         self.size = Size(width: width, height: height)
     }
+    
+    private init(topLeftCorner: Vertex, size: Size) {
+        self.topLeftCorner = topLeftCorner
+        self.size = size
+    }
+    
+    public func moveByX(deltaX: Double) -> Rectangle {
+        let movedTopLeftCorner = topLeftCorner.moveByX(deltaX)
+        return Rectangle(topLeftCorner: movedTopLeftCorner, size: size)
+    }
 }
 
 extension Rectangle: CustomStringConvertible {
