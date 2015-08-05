@@ -9,6 +9,6 @@
         <page name='Numeric Types'/>
         <page name='Nil'/>
         <page name='Higher Order Functions'/>
-        <page name='Tuples'/>
+        <page name='Type Alias'/>
     </pages>
 </playground>

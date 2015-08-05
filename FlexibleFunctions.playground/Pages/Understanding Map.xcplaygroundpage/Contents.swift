@@ -1,5 +1,4 @@
 //: ### Understanding Map
-
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 extension Array {

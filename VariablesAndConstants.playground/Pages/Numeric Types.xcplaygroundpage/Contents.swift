@@ -1,4 +1,5 @@
 //: ### Numeric Types
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 let simpleProduct = 5 * 3.4
 

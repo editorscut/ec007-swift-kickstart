@@ -1,5 +1,4 @@
 //: ### Higher Order Functions
-
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 

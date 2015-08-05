@@ -1,4 +1,5 @@
 //: ### Modify Arrays
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 var coffeeDrinks = [String]()
 coffeeDrinks.count

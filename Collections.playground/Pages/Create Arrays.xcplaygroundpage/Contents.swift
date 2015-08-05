@@ -1,4 +1,5 @@
 //: ### Create Arrays
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 let people = ["Swift Programmer", "Obj-C Old-timer"]
 

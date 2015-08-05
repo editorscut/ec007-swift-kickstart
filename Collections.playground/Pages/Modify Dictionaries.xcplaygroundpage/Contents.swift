@@ -1,4 +1,5 @@
 //: ### Modify Dictionaries
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 var numbers = [String:Int]()
 numbers["one"] = 3

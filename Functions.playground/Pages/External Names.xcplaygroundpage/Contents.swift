@@ -1,5 +1,4 @@
 //: ### External Names
-
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 func hello(name: String, affiliation: String) {

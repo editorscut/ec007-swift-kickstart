@@ -1,5 +1,4 @@
 //: ### Transforming Arrays
-
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 

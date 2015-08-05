@@ -1,4 +1,5 @@
 //: ### Inferring Type
+//: [TOC](TOC) | Previous | [Next](@next)
 
 let person = "Swift Programmer"
 

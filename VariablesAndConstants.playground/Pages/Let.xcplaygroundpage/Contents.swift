@@ -1,4 +1,5 @@
 //: ### Let
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 let person = "Swift Programmer"
 

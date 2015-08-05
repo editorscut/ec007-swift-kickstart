@@ -1,4 +1,5 @@
 //: ### One Type
+//: [TOC](TOC) | Previous | [Next](@next)
 
 let numbers = [0, 1, 2]
 

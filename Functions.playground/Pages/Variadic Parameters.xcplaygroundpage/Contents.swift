@@ -1,5 +1,4 @@
 //: ### Variadic Parameters
-
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 

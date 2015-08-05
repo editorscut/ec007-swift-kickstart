@@ -7,4 +7,5 @@
 * [Numeric Types](Numeric%20Types)
 * [Nil](Nil)
 * [Higher Order Functions](Higher%20Order%20Functions)
+* [Type Alias](Type%20Alias)
 */

@@ -1,4 +1,5 @@
 //: ### Value and Reference Types
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 var x = 7
 var y = x

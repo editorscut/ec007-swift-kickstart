@@ -1,4 +1,5 @@
 //: ### Optionals and Dictionaries
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 let numbers = ["one":1, "two":2]
 let one = numbers["one"]
