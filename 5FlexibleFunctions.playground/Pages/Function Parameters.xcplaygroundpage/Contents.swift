@@ -1,5 +1,5 @@
 //: ### Function Parameters
-//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
+//: [TOC](TOC) | Previous | [Next](@next)
 
 
 var two = 2
@@ -13,4 +13,4 @@ double(two)
 two
 
 
-//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
+//: [TOC](TOC) | Previous | [Next](@next)

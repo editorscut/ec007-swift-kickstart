@@ -18,6 +18,4 @@ let whiteBackground = Desktop.White
 
 let redBackground = Desktop.Color(PrimaryColor.Red)
 let yellowBackground = Desktop.Color(.Yellow)
-
-
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)

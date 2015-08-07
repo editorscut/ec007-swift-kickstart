@@ -1,5 +1,5 @@
 //: ### Understanding Map
-//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
+//: [TOC](TOC) | [Previous](@previous) | Next
 
 extension Array {
     func transform<U>(f:(Element) -> U) -> [U] {
@@ -29,4 +29,4 @@ let revenueMap = numberOfCopies.map{Double($0) * 0.99 * 0.70}
 
 revenueMap
 
-//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
+//: [TOC](TOC) | [Previous](@previous) | Next

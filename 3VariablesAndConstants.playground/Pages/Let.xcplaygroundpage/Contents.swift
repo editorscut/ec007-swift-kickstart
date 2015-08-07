@@ -8,16 +8,16 @@ let person = "Swift Programmer"
 let shouldBeRed: Bool
 
 shouldBeRed = true
-//
-//let stringWithoutValue: String
-//
-//if shouldBeRed {
-//    stringWithoutValue = "red"
-//} else {
-//    stringWithoutValue = "blue"
-//}
-//
-//stringWithoutValue
+
+let stringWithoutValue: String
+
+if shouldBeRed {
+    stringWithoutValue = "red"
+} else {
+    stringWithoutValue = "blue"
+}
+
+stringWithoutValue
 
 
 

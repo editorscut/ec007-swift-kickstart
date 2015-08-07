@@ -1,5 +1,5 @@
 //: ### Composition
-//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
+//: [TOC](TOC) | [Previous](@previous) | Next
 
 protocol Namable: CustomStringConvertible {
     func nameBadge() -> String
@@ -40,4 +40,4 @@ let daniel = ConferenceAttendee(name: "Daniel")
 let kimberli = TutorialAttendee(attendee: ConferenceAttendee(name: "Kimberli"), tutorial: "Swift Kickstart")
 
 
-//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
+//: [TOC](TOC) | [Previous](@previous) | Next 
