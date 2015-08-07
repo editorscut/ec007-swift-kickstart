@@ -1,4 +1,4 @@
-//: ### Computed Properties
+//: ### Creating a Protocol
 //: [TOC](TOC) | Previous | [Next](@next)
 import Foundation
 

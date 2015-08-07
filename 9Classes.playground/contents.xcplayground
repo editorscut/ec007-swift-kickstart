@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' requires-full-environment='true'>
+    <pages>
+        <page name='TOC'/>
+        <page name='Creating a Class'/>
+        <page name='Initializers'/>
+        <page name='Subclasses'/>
+        <page name='Methods'/>
+        <page name='Optional Property Values'/>
+        <page name='Optional Chaining'/>
+        <page name='Loading and Unloading'/>
+        <page name='Composition Preparation'/>
+        <page name='Composition'/>
+    </pages>
+</playground>

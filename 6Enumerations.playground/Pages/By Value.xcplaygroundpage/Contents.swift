@@ -1,5 +1,5 @@
 //: ### By Value
-//: [TOC](TOC) | [Previous](@previous) | Next
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 enum PrimaryColor: String {
     case Red
@@ -24,4 +24,4 @@ color1 = .Blue
 
 color1 == color2
 
-//: [TOC](TOC) | [Previous](@previous) | Next
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
