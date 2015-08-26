@@ -1,4 +1,4 @@
-//: ### Return Values
+//: ### Returning Tuples
 //: [TOC](TOC) | [Previous](@previous) | Next
 
 

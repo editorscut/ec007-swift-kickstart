@@ -15,7 +15,7 @@ func hello(name: String, numberOfTimes: Int) {
 }
 func hello(name: String, numberOfTimes: Int, openParens: String, closeParens: String) {
     for i in 1 ... numberOfTimes {
-        print(openParens + i.description + closeParens + " ", appendNewline: false)
+        print(openParens, i, closeParens, separator:"", terminator: " ")
         hello(name)
     }
 }

@@ -6,6 +6,7 @@
 * [Multiple Parameters](Multiple%20Parameters)
 * [Default Values](Default%20Values)
 * [External Names](External%20Names)
+* [The print() Function](The%20print()%20Function)
 * [Variadic Parameters](Variadic%20Parameters)
 * [Return Values](Return%20Values)
 * [Returning Tuples](Returning%20Tuples)
