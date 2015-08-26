@@ -16,7 +16,7 @@ yField.text = "y"
 print("x = \(xField.text!), y = \(yField.text!)")
 
 
-var xNumbers = [0, 1, 2,3]
+var xNumbers = [0, 1, 2, 3]
 var yNumbers = xNumbers
 xNumbers[0] = 100
 print("x = \(xNumbers), y = \(yNumbers)")
