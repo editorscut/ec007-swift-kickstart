@@ -1,5 +1,5 @@
 //: ### Protocol Extensions
-//: [TOC](TOC) | [Previous](@previous) | Next
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 func shiftLeft<T: Movable>(movable: T) -> T {
     return movable.moveByX(-1)
@@ -13,4 +13,4 @@ let shiftedLeftRectangle = shiftLeft(rectangle)
 let shiftedRightRectangle = rectangle.shiftRight()
 point.whereAmI()
 rectangle.whereAmI()
-//: [TOC](TOC) | [Previous](@previous) | Next
+//: [TOC](TOC) | [Previous](@previous) | [Next](@next)

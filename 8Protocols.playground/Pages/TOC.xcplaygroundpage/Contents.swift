@@ -8,4 +8,5 @@
 * [Polymorphism](Polymorphism)
 * [Generics](Generics)
 * [Protocol Extensions](Protocol%20Extensions)
+* [Custom Operators](Custom%20Operators)
 */

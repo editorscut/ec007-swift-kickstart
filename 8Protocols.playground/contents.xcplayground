@@ -10,10 +10,6 @@
         <page name='Polymorphism'/>
         <page name='Generics'/>
         <page name='Protocol Extensions'/>
-        <page name='Untitled Page 10'/>
-        <page name='Untitled Page 11'/>
-        <page name='Untitled Page 12'/>
-        <page name='Untitled Page 13'/>
-        <page name='Untitled Page 14'/>
+        <page name='Custom Operators'/>
     </pages>
 </playground>
