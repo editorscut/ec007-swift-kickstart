@@ -11,6 +11,7 @@
         <page name='Associated Values'/>
         <page name='Binding to Associated Values'/>
         <page name='By Value'/>
+        <page name='Error Type'/>
         <page name='Option Sets'/>
     </pages>
 </playground>

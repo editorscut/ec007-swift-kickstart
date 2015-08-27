@@ -9,5 +9,6 @@
 * [Associated Values](Associated%20Values)
 * [Binding to Associated Values](Binding%20to%20Associated%20Values)
 * [By Value](By%20Value)
+* [Error Type](Error%20Type)
 * [Option Sets](Option%20Sets)
 */

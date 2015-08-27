@@ -17,6 +17,7 @@ enum Color: Int {
 }
 
 let crayon = Color.Green
+crayon.rawValue
 crayon.actualColor
 
 enum Color2: CGFloat {
