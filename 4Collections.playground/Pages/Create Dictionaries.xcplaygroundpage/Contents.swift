@@ -7,9 +7,6 @@ var moreNumbers: [String: Int]
 let numbersKeys = numbers.keys
 let numbersValues = numbers.values
 
-let numberKeysArray = numbers.keys.array
-let numberValuesArray = numbers.values.array
-
 for number in numbers.keys {
     print("\(number) : \(numbers[number])")
 }
