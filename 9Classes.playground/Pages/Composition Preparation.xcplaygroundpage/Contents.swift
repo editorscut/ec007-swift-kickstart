@@ -1,4 +1,4 @@
-//: ### Composition
+//: ### Composition Preparation
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)
 
 //: This is the "before" picture. The "after" picture is on the next page.

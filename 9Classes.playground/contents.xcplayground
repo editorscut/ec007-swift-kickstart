@@ -7,6 +7,8 @@
         <page name='Subclasses'/>
         <page name='Methods'/>
         <page name='Optional Property Values'/>
+        <page name='Failable Initializers'/>
+        <page name='Required Initializers'/>
         <page name='Optional Chaining'/>
         <page name='Loading and Unloading'/>
         <page name='Composition Preparation'/>
