@@ -31,6 +31,6 @@ let crayon = Color.Green
 crayon.actualColor()
 crayon.colorSwatch(width: 200, height: 100)
 
-let paintBrush = Color.Red
+let paintBrush = Color.Blue
 paintBrush.actualColor()
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)

@@ -23,7 +23,7 @@ func actualColor(color: Color) -> UIColor {
 let crayon = Color.Green
 actualColor(crayon)
 
-let paintBrush = Color.Red
+let paintBrush = Color.Blue
 actualColor(paintBrush)
 
 //: [TOC](TOC) | [Previous](@previous) | [Next](@next)

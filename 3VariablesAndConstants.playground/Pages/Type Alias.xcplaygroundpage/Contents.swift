@@ -21,7 +21,7 @@ func revenueForCopies(numberSold: Count) -> USDollars {
 
 revenueForCopies(6)
 
-func totalRevenue(calculator: RevenueCalculator, copies: Count ...) -> Double {
+func totalRevenue(calculator: RevenueCalculator, copies: Count ...) -> USDollars {
     var runningTotal = 0.00
     for copy in copies {
         runningTotal += calculator(copy)

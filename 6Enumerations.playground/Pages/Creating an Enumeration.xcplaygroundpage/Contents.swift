@@ -8,13 +8,13 @@ enum Color {
     case Blue
 }
 
-var crayon = Color.Green
-crayon = .Blue
+var crayon = Color.Red
+crayon = .Green
 
 let paintBrush: Color
 
 // much later
 
-paintBrush = .Red
+paintBrush = .Blue
 
 //: [TOC](TOC) | Previous | [Next](@next)
