@@ -8,9 +8,12 @@ struct Vertex {
             print("The value of x is changing from \(self.x) to \(newValue).")
         }
         didSet {
-            print("The value of x has changed from \(oldValue) to \(x).")
-            if x == 8.0 {
-                x = -8.0
+            if x == 6.0 {
+                x = -6.0
+                print("The proposed new value of x was 6, we're changing it to -6.")
+            } else {
+                print("The value of x has changed from \(oldValue) to \(x).")
+
             }
         }
     }
